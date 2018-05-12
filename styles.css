@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background: #214554;
+}
+
+.navbar {
+  width:80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #DDE6E5;
+}
+
+header::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img.logo {
+  width: auto;
+  height: 40px;
+}
+
+.logo{
+  float: left;
+}
+
+nav{
+  float:right;
+}
+
+nav ul{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  margin-right: 30px;
+}
