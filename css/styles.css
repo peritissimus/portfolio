@@ -30,12 +30,10 @@ header::after {
   padding: 10px 0;
   margin-top: 3px;
   margin-bottom: 4px;
-
   /* border: 2px solid black;
-  padding: 10px;
   padding-top: 3px;
   padding-bottom: 3px;
-  width: 75px;
+  width: auto;
   text-align: center;
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -89,9 +87,6 @@ nav a:hover::before{
   width: 100%;
 }
 
-nav a:focus {
-  width: 100%;
-}
 
 #home {
   display: -webkit-box;
@@ -103,9 +98,8 @@ nav a:focus {
   -ms-flex-align: center;
    align-items: center;
   height: 100vh;
-  position: relative;
   padding-top: 0;
-  margin-top: 25px;
+  margin-top: 32px;
 }
 
 
@@ -117,10 +111,17 @@ nav a:focus {
 }
 
 #about {
-  padding-top: 200px;
-  padding-bottom: 150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+   align-items: center;
   background-color: #fffdfb;
   height: 100vh;
+
 }
 
 .about-info h3 {
@@ -131,17 +132,6 @@ nav a:focus {
 }
 
 #art {
-  padding-top: 200px;
-  padding-bottom: 150px;
-  background-color: #2f2f2f;
-  height: 100vh;
-}
-
-#contact {
-  padding-top: 200px;
-  padding-bottom: 150px;
-  background-color: #000000;
-  height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -150,4 +140,67 @@ nav a:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
    align-items: center;
+  background-color: #2f2f2f;
+  height: 100vh;
+  margin: 0;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+   align-items: center;
+	background-color: #565656;
+  height: 100vh;
+  margin: 0;
+}
+
+#contact i.fa {
+	color: #121d1f;
+	margin-bottom: 10px;
+}
+#contact .social {
+	margin: 0px;
+  padding: 0;
+  width: 100%;
+  display: flex;
+
+}
+#contact .social ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+#contact .social i.fa {
+	font-size: 30px;
+	padding: 4px 5px;
+	color: #fff;
+	transition: all 0.5s;
+}
+#contact .social i.fa:hover {
+	color: #121d1f;
+}
+
+footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  background: darkgrey;
+  height: 32px;
+  margin: 0;
+}
+
+footer div {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  float: right;
+  font-size: 12px;
+  text-align: right;
+  color:grey;
 }
