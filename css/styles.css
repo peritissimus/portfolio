@@ -115,7 +115,7 @@ nav a:hover::before{
   animation: 
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
-	font-size: 100%;
+	font-size: 60px;
 }
 
 @keyframes typing {
