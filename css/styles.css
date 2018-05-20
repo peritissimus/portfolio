@@ -103,11 +103,27 @@ nav a:hover::before{
 }
 
 
-#home h1 {
-  align-content: space-around;
-  color: #ffffff;
-  font-size: 6em;
-  line-height: 1.2em;
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
 
 #about {
@@ -154,6 +170,7 @@ nav a:hover::before{
   -webkit-align-items: center;
   -ms-flex-align: center;
    align-items: center;
+  flex-flow: row-wrap;
 	background-color: #565656;
   height: 100vh;
   margin: 0;
@@ -168,6 +185,7 @@ nav a:hover::before{
   padding: 0;
   width: 100%;
   display: flex;
+	content-align: space-around;
 
 }
 #contact .social ul li {
