@@ -2,13 +2,14 @@ body {
   margin: 0;
   background: #222;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
+
 }
 
 .container {
-  width: 80%;
+  width: auto;
   margin: 0 auto;
-	padding-left: 10%
+	padding-left: 10%;
+  padding-right: 10%;
 }
 
 header {
@@ -28,9 +29,12 @@ header::after {
 
 .logo {
   float: left;
-  padding: 10px 0;
-  margin-top: 3px;
-  margin-bottom: 4px;
+
+  margin-top: 0px;
+margin-bottom: 0px;
+padding-top: 10px;
+padding-bottom: 0px;
+color: black;
   /* border: 2px solid black;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -64,7 +68,8 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
-  padding-bottom: 3px
+  padding-bottom: 3px;
+  font-weight: 400;
 }
 
 nav a:hover{
@@ -88,6 +93,7 @@ nav a:hover::before{
   width: 100%;
 }
 
+/* ------------------------HOME-------------------------- */
 
 #home {
   display: -webkit-box;
@@ -101,10 +107,28 @@ nav a:hover::before{
   height: 100vh;
   padding-top: 0;
   margin-top: 32px;
+
+}
+
+#home .container {
+  margin-top: 50vh;
+  height: 150px;
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
+.homebg {
+  background-image: url(photos/homebg.jpg);
+  width: 100vw;
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .typewriter {
-  width: 50vw;
+  width: 700px;
   margin: 0;
 }
 
@@ -119,6 +143,7 @@ nav a:hover::before{
   animation:
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
+	font-size: 50px;
 }
 
 @keyframes typing {
@@ -161,15 +186,63 @@ nav a:hover::before{
   -webkit-align-items: center;
   -ms-flex-align: center;
    align-items: center;
+   justify-content: space-around;
   background-color: #2f2f2f;
   height: 100vh;
   margin: 0;
 }
 
-#mask ul{
+.art-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+   align-items: center;
+  width: 100vw;
+  height: 50vh;
   margin: 0;
   padding: 0;
 }
+
+.art-container ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+   align-items: center;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+
+}
+
+.art-container li {
+  height: 50vh;
+  width: 30vw;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+
+}
+
+.art-container li:hover {
+  border: 2px solid #152e49;
+}
+
+/*-------------------- CONTACT ----------------------*/
 
 #contact {
   display: -webkit-box;
@@ -181,25 +254,142 @@ nav a:hover::before{
   -ms-flex-align: center;
    align-items: center;
    flex-flow: row;
-	background-color: #565656;
+	background-color: #304352;
   height: 100vh;
   margin: 0;
+  justify-content: space-around;
 }
+
+.conformtitle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+   align-items: center;
+   justify-content: space-around;
+   flex-flow: column;
+
+}
+
+.conformtitle h1 {
+  text-transform: uppercase;
+  color: #5ace5a;
+  text-shadow: 2px;
+}
+
+.conformtitle p {
+  margin-bottom: 40px;
+  color: white;
+
+}
+
+.senmsg {
+  /* display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  justify-content: center; */
+
+  align-items: center;
+}
+
+.conbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 640px;
+  margin: 0;
+  padding:0;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.msginput{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  display: inline-block;
+  margin:0;
+  padding: 0;
+  justify-content: space-between;
+  width: 640px;
+  margin-bottom: 20px;
+}
+
+.msginput.name {
+
+}
+
+.name, .email {
+  width:auto;
+  margin:0;
+  /* border: 3px solid #cccccc; */
+  padding: 5px;
+  width: 300px;
+  text-align: center;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+.textar{
+  width: 634px;
+  /* border: 3px solid #cccccc; */
+  padding: 0px;
+  text-align: center;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.submitbox {
+  width:640px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+
+}
+
 
 #contact i.fa {
 	color: #121d1f;
 	margin-bottom: 10px;
 }
 #contact .social {
+  width:640px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
 	margin: 0px;
   padding: 0;
-  width: 100%;
+
+}
+
+#contact .social ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  justify-content: space-around;
 
 }
 #contact .social ul li {
 	display: inline-block;
-	margin: 0 20px;
+	margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 #contact .social i.fa {
 	font-size: 30px;
@@ -210,8 +400,45 @@ nav a:hover::before{
 #contact .social i.fa:hover {
 	color: #121d1f;
 }
+/* ---------------------------- */
+#contact .form-control {
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid #ffffff;
+  color: #ccc;
+  font-family: 'Josefin Sans', sans-serif;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  transition: all 0.4s ease-in-out;
+}
 
-con
+#contact .form-control:focus {
+  border-color: #5ace5a;
+  color: #5ace5a;
+}
+
+#contact input {
+  height: 55px;
+}
+
+#contact input[type="submit"] {
+  background: #5ace5a;
+  border:none;
+
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#contact input[type="submit"]:hover {
+  background: #222;
+  color: #ffffff;
+}
+
+
+/* ----------------------FOOTER ---------------------------*/
 
 footer {
   display: -webkit-box;
@@ -222,6 +449,7 @@ footer {
   background: darkgrey;
   height: 32px;
   margin: 0;
+  background-attachment: fixed;
 }
 
 footer div {
