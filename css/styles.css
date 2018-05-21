@@ -118,7 +118,7 @@ nav a:hover::before{
 }
 
 .homebg {
-  background-image: url(photos/homebg.jpg);
+  background-image: url(https://raw.githubusercontent.com/peritissimus/portfolio/master/photos/homebg.jpg);
   width: 100vw;
   height:100%;
   background-position: center;
